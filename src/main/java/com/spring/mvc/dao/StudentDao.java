@@ -37,4 +37,8 @@ public class StudentDao {
 		
 		return students;
 	}
+	public Student getStudent(int rollNo) {
+		Student student = this.hibernateTemplate.get(Student.class, rollNo);
+		return student;
+	}
 }

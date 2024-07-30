@@ -35,4 +35,9 @@ public class StudentService {
 	public List<Student> getStudents(){
 		return this.studentDao.getAllStudents();
 	}
+	
+	// get student
+	public Student getStudent(int rollNo) {
+		return this.studentDao.getStudent(rollNo);
+	}
 }

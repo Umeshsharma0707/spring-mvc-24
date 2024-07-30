@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Students Management</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -14,13 +14,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<h1><c:out value="${Heading }" /></h1>
+	<p><c:out value="${desc }" /></p>
 <div class="container">
   <h2>Register Student</h2>
   <form action="processForm" method="Post">
     <div class="form-group">
       <label for="email">roll No:</label>
       <input type="text" class="form-control" id="rollNo" placeholder="Enter Roll No" name="rollNo">
+      
+     
     </div>
     <div class="form-group">
       <label for="pwd">student name:</label>
